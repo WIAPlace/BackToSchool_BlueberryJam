@@ -29,7 +29,7 @@ public class PlayerMovement : MonoBehaviour
         Move(); // Function for movement.
     }
 
-    private void Move()
+    private void Move() // Movement script
     {
         if (moveDir == Vector2.zero)
         { // If the player isnt moving dont bother running through this script.
@@ -37,8 +37,6 @@ public class PlayerMovement : MonoBehaviour
             return;
         }
         rb.velocity = moveDir*(speed*Time.deltaTime);
-        
-        
     }
 
     private void HandleMove(Vector2 dir)

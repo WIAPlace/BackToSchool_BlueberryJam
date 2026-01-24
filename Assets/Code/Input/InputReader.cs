@@ -57,7 +57,7 @@ public class InputReader : ScriptableObject, InputSystem.IGameplayActions, Input
     // the ? after each event name is to signify to do it if it exists.
     public void OnAttack(UnityEngine.InputSystem.InputAction.CallbackContext context)
     { // when button (like mouse) is pressed attack will play
-       // Not Implemented At the Moment
+       AttackEvent?.Invoke();
     }
 
     public void OnLook(UnityEngine.InputSystem.InputAction.CallbackContext context)
