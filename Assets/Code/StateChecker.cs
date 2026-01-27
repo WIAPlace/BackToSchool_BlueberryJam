@@ -16,9 +16,20 @@ public class StateChecker : MonoBehaviour
     private GameObject playerState;
 
     [SerializeField] 
+    [Tooltip("Ghost Array")]
+    private GameObject[] Ghosts;
+
+    [SerializeField] 
     [Tooltip("Loose Scene")]
     private string looseSceneName;
 
+    [SerializeField] 
+    [Tooltip("Win Scene")]
+    private string winSceneName;
+
+
+
+    private bool ghostAlive;
     void Start()
     {
         
@@ -30,6 +41,19 @@ public class StateChecker : MonoBehaviour
         if (playerState == null)
         { // if player is destroyed the scene will change to the loose scene.
             SceneManager.LoadScene(looseSceneName); 
+        }
+        
+        ghostAlive=false;
+        foreach(GameObject roomGhost in Ghosts)
+        { // when you enter the room set the ghosts to active
+            if(roomGhost != null){ // if it still exists
+                ghostAlive=true;
+                //Debug.Log("Alive");
+            }
+        }
+        if (!ghostAlive)
+        {
+            SceneManager.LoadScene(winSceneName);
         }
 
     }

@@ -35,6 +35,10 @@ public class Health : MonoBehaviour
         }
     }
 
+    public int GetHealth()
+    {
+        return currentHealth;
+    }
 
     void OnCollisionEnter2D(Collision2D collision) // on entering a collision
     {

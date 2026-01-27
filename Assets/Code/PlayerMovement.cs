@@ -37,6 +37,13 @@ public class PlayerMovement : MonoBehaviour
             return;
         }
         rb.velocity = moveDir*(speed*Time.deltaTime);
+        // Animation running will go here
+        //////////////////////////////////////////////////////////////////////////////
+
+
+
+
+
     }
 
     private void HandleMove(Vector2 dir)
