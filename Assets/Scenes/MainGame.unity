@@ -325,7 +325,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: -862.9, y: 443.6}
-  m_SizeDelta: {x: 128, y: 100}
+  m_SizeDelta: {x: 200, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &141718674
 MonoBehaviour:
@@ -1269,7 +1269,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: -598, y: 443.6}
-  m_SizeDelta: {x: 128, y: 100}
+  m_SizeDelta: {x: 200, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &940225554
 MonoBehaviour:
@@ -1772,8 +1772,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxHealth: 3
-  emptyHeart: {fileID: 21300000, guid: d8892bdab4209574eaffd6c695109562, type: 3}
-  fullHeart: {fileID: 21300000, guid: 165572212bf970a47b10f2c3f8735c61, type: 3}
+  emptyHeart: {fileID: 21300000, guid: 42014554a99dedb46a63ad22ca8fb07f, type: 3}
+  fullHeart: {fileID: 21300000, guid: cc1c0d70b26b98848b3c3425eb9875cb, type: 3}
   hearts:
   - {fileID: 141718674}
   - {fileID: 2017828362}
@@ -3144,7 +3144,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: -731, y: 443.6}
-  m_SizeDelta: {x: 128, y: 100}
+  m_SizeDelta: {x: 200, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2017828362
 MonoBehaviour:
