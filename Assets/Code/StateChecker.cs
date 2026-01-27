@@ -42,7 +42,8 @@ public class StateChecker : MonoBehaviour
         { // if player is destroyed the scene will change to the loose scene.
             SceneManager.LoadScene(looseSceneName); 
         }
-        ghostAlive = false;
+        
+        ghostAlive=false;
         foreach(GameObject roomGhost in Ghosts)
         { // when you enter the room set the ghosts to active
             if(roomGhost != null){ // if it still exists
@@ -50,7 +51,7 @@ public class StateChecker : MonoBehaviour
                 //Debug.Log("Alive");
             }
         }
-        if (ghostAlive)
+        if (!ghostAlive)
         {
             SceneManager.LoadScene(winSceneName);
         }

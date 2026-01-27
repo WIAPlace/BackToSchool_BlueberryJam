@@ -1742,8 +1742,8 @@ MonoBehaviour:
   - {fileID: 866783466}
   - {fileID: 741069673}
   - {fileID: 1821738676}
-  looseSceneName: Test Lose
-  winSceneName: Win Scene
+  looseSceneName: GameOver
+  winSceneName: WinScreen
 --- !u!4 &1468259409
 Transform:
   m_ObjectHideFlags: 0
