@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class TestKnockback : MonoBehaviour
 {
-<<<<<<< Updated upstream
     public float knockbackForce = 10f;
 
     private void OnCollisionEnter2D(Collision2D collision)
@@ -18,13 +17,6 @@ public class TestKnockback : MonoBehaviour
                 rb.AddForce(knockbackDirection * knockbackForce, ForceMode2D.Impulse);
             }
         }
-=======
-    //public float knockbackForce = 10f;
-
-    private void OnCollisionEnter2D(Collision2D collision)
-    {
-
->>>>>>> Stashed changes
     }
 // Start is called before the first frame update
     void Start()

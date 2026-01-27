@@ -12,7 +12,7 @@ public class PlayerMovement : MonoBehaviour
     private Rigidbody2D rb; // Rigid Body of the Player Object
     [SerializeField] private InputReader input; // Input reader refrence so that controls work
     [SerializeField] private float speed; // Speed of the player
-    [SerializeField] private Animator animator;
+
     private Vector2 moveDir; // Direction of movement
 
     private void Start()
@@ -37,27 +37,6 @@ public class PlayerMovement : MonoBehaviour
             return;
         }
         rb.velocity = moveDir*(speed*Time.deltaTime);
-<<<<<<< Updated upstream
-=======
-        // Animation running will go here
-        if(moveDir == Vector2.zero)
-        {
-            animator.SetBool("isLeft", true);
-            animator.SetBool("isRight", true);
-            animator.SetBool("isUp", true);
-            animator.SetBool("isDown", true);
-        }
-        else
-        {
-            animator.SetBool("isLeft", false);
-            animator.SetBool("isRight", false);
-            animator.SetBool("isUp", false);
-            animator.SetBool("isDown", false);
-        }
-        
-
-
->>>>>>> Stashed changes
     }
 
     private void HandleMove(Vector2 dir)
