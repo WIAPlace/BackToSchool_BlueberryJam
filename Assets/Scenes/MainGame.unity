@@ -1503,9 +1503,7 @@ MonoBehaviour:
   playerLayer:
     serializedVersion: 2
     m_Bits: 128
-  Ghosts:
-  - {fileID: 1745904664}
-  - {fileID: 1821738676}
+  Ghosts: []
 --- !u!61 &997061453
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1736,14 +1734,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerState: {fileID: 1908050983}
-  Ghosts:
-  - {fileID: 1745904664}
-  - {fileID: 1773206222}
-  - {fileID: 866783466}
-  - {fileID: 741069673}
-  - {fileID: 1821738676}
+  Ghosts: []
   looseSceneName: GameOver
-  winSceneName: WinScreen
+  winSceneName: 
 --- !u!4 &1468259409
 Transform:
   m_ObjectHideFlags: 0
@@ -1778,7 +1771,7 @@ MonoBehaviour:
   - {fileID: 141718674}
   - {fileID: 2017828362}
   - {fileID: 940225554}
-  playerHealth: {fileID: 1908050990}
+  playerHealth: {fileID: 0}
 --- !u!1 &1490447428
 GameObject:
   m_ObjectHideFlags: 0
@@ -2071,9 +2064,7 @@ MonoBehaviour:
   playerLayer:
     serializedVersion: 2
     m_Bits: 128
-  Ghosts:
-  - {fileID: 1773206222}
-  - {fileID: 866783466}
+  Ghosts: []
 --- !u!61 &1735331614
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2781,24 +2772,53 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 533926581144509910, guid: 280cd148f85b1b443a5ff6ba608b87e7, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1908050997}
+    - targetCorrespondingSourceObject: {fileID: 533926581144509910, guid: 280cd148f85b1b443a5ff6ba608b87e7, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1908050998}
   m_SourcePrefab: {fileID: 100100000, guid: 280cd148f85b1b443a5ff6ba608b87e7, type: 3}
 --- !u!1 &1908050983 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 533926581144509910, guid: 280cd148f85b1b443a5ff6ba608b87e7, type: 3}
   m_PrefabInstance: {fileID: 1908050982}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1908050990 stripped
+--- !u!95 &1908050997
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1908050983}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 96dc9aede86e80243ad7819756498e4e, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &1908050998
 MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 4072973188548931652, guid: 280cd148f85b1b443a5ff6ba608b87e7, type: 3}
-  m_PrefabInstance: {fileID: 1908050982}
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1908050983}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e0069616051762147b7ac1d58b99cfa9, type: 3}
+  m_Script: {fileID: 11500000, guid: ac4903ddef6dc0242a34e474937e582b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  speed: 1
 --- !u!1 &1977753475
 GameObject:
   m_ObjectHideFlags: 0
@@ -2934,8 +2954,7 @@ MonoBehaviour:
   playerLayer:
     serializedVersion: 2
     m_Bits: 128
-  Ghosts:
-  - {fileID: 741069673}
+  Ghosts: []
 --- !u!61 &1999982793
 BoxCollider2D:
   m_ObjectHideFlags: 0
