@@ -2192,7 +2192,7 @@ MonoBehaviour:
   playerState: {fileID: 1908050983}
   Ghosts: []
   looseSceneName: GameOver
-  winSceneName: WinScreen
+  winSceneName: 
 --- !u!4 &1468259409
 Transform:
   m_ObjectHideFlags: 0
@@ -2228,7 +2228,6 @@ MonoBehaviour:
   - {fileID: 2017828362}
   - {fileID: 940225554}
   playerHealth: {fileID: 1908051000}
-<<<<<<< HEAD
 --- !u!1 &1475553367 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1016317539338159485, guid: 7e403a626f7f69249ad62f66664bbdc8, type: 3}
@@ -2313,8 +2312,6 @@ CircleCollider2D:
   m_Offset: {x: 0.139981, y: -0.02333033}
   serializedVersion: 2
   m_Radius: 0.5883852
-=======
->>>>>>> c6eb1f3a663e65fbec50f7b1044981a1cb11caba
 --- !u!1 &1490447428
 GameObject:
   m_ObjectHideFlags: 0
