@@ -26,12 +26,13 @@ public class StateChecker : MonoBehaviour
     [Tooltip("Win Scene")]
     private string winSceneName;
 
+    [SerializeField] private InputReader input; // Input reader refrence so that controls work
 
 
     private bool ghostAlive;
     void Start()
     {
-        
+        input.PauseEvent+=PauseHandler;
     }
 
     // Update is called once per frame
@@ -55,5 +56,10 @@ public class StateChecker : MonoBehaviour
             SceneManager.LoadScene(winSceneName);
         }
 
+
+    }
+    void PauseHandler()
+    {
+        SceneManager.LoadScene("Title Screen");
     }
 }

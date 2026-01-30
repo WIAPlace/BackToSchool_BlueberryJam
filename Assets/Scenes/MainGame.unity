@@ -311,6 +311,10 @@ PrefabInstance:
       value: Ghost Fast (5)
       objectReference: {fileID: 0}
     - target: {fileID: 1016317539338159485, guid: 7e403a626f7f69249ad62f66664bbdc8, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1016317539338159485, guid: 7e403a626f7f69249ad62f66664bbdc8, type: 3}
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
@@ -464,6 +468,10 @@ PrefabInstance:
       value: Ghost Fast (7)
       objectReference: {fileID: 0}
     - target: {fileID: 1016317539338159485, guid: 7e403a626f7f69249ad62f66664bbdc8, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1016317539338159485, guid: 7e403a626f7f69249ad62f66664bbdc8, type: 3}
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
@@ -540,6 +548,10 @@ PrefabInstance:
     - target: {fileID: 1016317539338159485, guid: 7e403a626f7f69249ad62f66664bbdc8, type: 3}
       propertyPath: m_Name
       value: Ghost Fast (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1016317539338159485, guid: 7e403a626f7f69249ad62f66664bbdc8, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 1016317539338159485, guid: 7e403a626f7f69249ad62f66664bbdc8, type: 3}
       propertyPath: m_IsActive
@@ -873,6 +885,10 @@ PrefabInstance:
       value: Ghost Fast (10)
       objectReference: {fileID: 0}
     - target: {fileID: 1016317539338159485, guid: 7e403a626f7f69249ad62f66664bbdc8, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1016317539338159485, guid: 7e403a626f7f69249ad62f66664bbdc8, type: 3}
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
@@ -1121,6 +1137,10 @@ PrefabInstance:
     - target: {fileID: 1016317539338159485, guid: 7e403a626f7f69249ad62f66664bbdc8, type: 3}
       propertyPath: m_Name
       value: Ghost Fast (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1016317539338159485, guid: 7e403a626f7f69249ad62f66664bbdc8, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 1016317539338159485, guid: 7e403a626f7f69249ad62f66664bbdc8, type: 3}
       propertyPath: m_IsActive
@@ -1547,6 +1567,10 @@ PrefabInstance:
     - target: {fileID: 1016317539338159485, guid: 7e403a626f7f69249ad62f66664bbdc8, type: 3}
       propertyPath: m_Name
       value: Ghost Fast (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1016317539338159485, guid: 7e403a626f7f69249ad62f66664bbdc8, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 1016317539338159485, guid: 7e403a626f7f69249ad62f66664bbdc8, type: 3}
       propertyPath: m_IsActive
@@ -2190,9 +2214,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerState: {fileID: 1908050983}
-  Ghosts: []
+  Ghosts:
+  - {fileID: 616183415}
+  - {fileID: 1119923447}
+  - {fileID: 455226864}
+  - {fileID: 370665641}
+  - {fileID: 1882530258}
+  - {fileID: 1475553367}
   looseSceneName: GameOver
-  winSceneName: 
+  winSceneName: WInScreen
+  input: {fileID: 11400000, guid: d5319b6f781dfc141bc76002e6742487, type: 2}
 --- !u!4 &1468259409
 Transform:
   m_ObjectHideFlags: 0
