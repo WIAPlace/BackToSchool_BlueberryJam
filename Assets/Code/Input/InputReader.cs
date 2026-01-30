@@ -72,10 +72,7 @@ public class InputReader : ScriptableObject, InputSystem.IGameplayActions, Input
 
     public void OnPause(UnityEngine.InputSystem.InputAction.CallbackContext context)
     { // Turn of Gameplay controlls and go to UI controls
-        if( context.phase == InputActionPhase.Performed ){
-            PauseEvent?.Invoke();
-            SetUI();
-        }
+        PauseEvent?.Invoke();
     }
 
     public void OnResume(UnityEngine.InputSystem.InputAction.CallbackContext context)
