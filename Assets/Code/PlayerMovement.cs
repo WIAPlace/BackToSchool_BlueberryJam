@@ -15,6 +15,8 @@ public class PlayerMovement : MonoBehaviour
 
     private Vector2 moveDir; // Direction of movement
 
+    
+
     private void Start()
     {   // Activating the input actions.
         input.MoveEvent+=HandleMove;
@@ -39,7 +41,7 @@ public class PlayerMovement : MonoBehaviour
         rb.velocity = moveDir*(speed*Time.deltaTime);
         // Animation running will go here
         //////////////////////////////////////////////////////////////////////////////
-
+       
 
 
 
